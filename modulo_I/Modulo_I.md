@@ -96,10 +96,7 @@ Un usuario sólo necesita el JRE para ejecutar las aplicaciones desarrolladas en
 
 <img src="./imagenes/JavaJVMDiagrama.png">
 
-<img src="./imagenes/jvm2.png">
-
 La Java Virtual Machine (JVM) recibe el código Byte Code obtenido de la compiliación de una determinada aplicación Java y la recompila en tiempo real al código nativo de la plataforma en que se está ejecutando.
-
 
 JVM es la que realmente llama al método principal presente en un código Java. JVM es una parte del JRE (Java Run Environment).
 
@@ -164,9 +161,11 @@ El motor de ejecución ejecuta .class (bytecode). Lee el código de bytes línea
 ### Tipos de datos en Java
 La principal diferencia entre tipos primitivos y objetos es la complejidad que presenta cada uno. Podriamos decir que un objeto esta 
 formado por un conjunto de datos primitivos.
+
 <img src="./imagenes/objetos vs tipos primitivos.png">
 
 #### Operadores aritméticos de Java
+
 <img src="./imagenes/operadores aritmeticos.png">
 
 ### Clases concretas, estáticas y abstractas
