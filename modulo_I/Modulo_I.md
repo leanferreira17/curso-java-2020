@@ -89,7 +89,7 @@ En su forma más simple, el entorno en tiempo de ejecución de Java está confor
 
 Un usuario sólo necesita el JRE para ejecutar las aplicaciones desarrolladas en lenguaje Java, mientras que para desarrollar nuevas aplicaciones en dicho lenguaje es necesario un entorno de desarrollo, denominado JDK, que además del JRE (mínimo imprescindible) incluye, entre otros, un compilador para Java. 
 
-<img src="/imagenes/JRE.png">
+<img src="./imagenes/JRE.png">
 
 
 # Java Virtual Machine (JVM)
