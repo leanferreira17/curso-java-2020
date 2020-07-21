@@ -159,13 +159,15 @@ El motor de ejecución ejecuta .class (bytecode). Lee el código de bytes línea
 - Compilador Just-In-Time (JIT): se usa para aumentar la eficiencia del intérprete. Compila todo el bytecode y lo cambia a código nativo para que cada vez que el intérprete vea llamadas a métodos repetidos, JIT proporcione código nativo directo para esa parte, de modo que la reinterpretación no es necesaria, por lo tanto, se mejora la eficiencia.
 - Recolector de basura: destruye objetos no referenciados.
 
+<img src="./imagenes/jvm.png">
+
 ### Tipos de datos en Java
 La principal diferencia entre tipos primitivos y objetos es la complejidad que presenta cada uno. Podriamos decir que un objeto esta 
 formado por un conjunto de datos primitivos.
-Ver imagen "objetos vs tipos primitivos".
+<img src="./imagenes/objetos vs tipos primitivos.png">
 
 #### Operadores aritméticos de Java
-Ver imagen "operadores aritméticos".
+<img src="./imagenes/operadores aritmeticos.png">
 
 ### Clases concretas, estáticas y abstractas
 
