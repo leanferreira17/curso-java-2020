@@ -16,7 +16,7 @@ class ClaseTest {
         Persona objetoPersona; // de esta forma lo que hace la JVM es reservar ese espacio en memoria
 
         // Instanciación
-        objetoPersona =  = new Persona(); // se llama al metodo constructor (implícito) de la clase Persona
+        objetoPersona = new Persona(); // se llama al metodo constructor (implícito) de la clase Persona
 
         // Para acceder a los miembros de clase (recordar: son los atributos y metodos) utilizamos el
         // operador "." (punto)
@@ -59,7 +59,7 @@ class Persona {
  * de la realidad.
  * Por ejemplo: Perro, Barco, Avion, etc...
  * Declararlos, instanciarlos mediante la palabra reservada "new" y llamar a su metodo imprimirDatos()
- * en el metodo main que venimos usando (aca arriba)
+ * en el metodo main que venimos usando
  */
 
 class NombreDeLaEntidadQueElija {
