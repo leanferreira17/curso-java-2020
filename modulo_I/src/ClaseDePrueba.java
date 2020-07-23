@@ -2,8 +2,8 @@ class ClaseDePrueba {
     public static void main(String[] args) {
 
         /*
-        * Tarea: jugar con los tipos primitivos de la tabla y con los operadores aritméticos
-        * */
+         * Tarea: jugar con los tipos primitivos de la tabla y con los operadores aritméticos
+         * */
 
         // Tipos primitivos
 
@@ -14,10 +14,10 @@ class ClaseDePrueba {
         // [tipo primitivo] + [nombreDeLaVariable] = [valor];
 
         // Declaración de una variable
-        float valorDeLaVariable;
+        long valorDeLaVariable = 1111111111L;
 
         // Inicialización de la variable (operador de asignación =)
-        valorDeLaVariable = 34.45f;
+        //valorDeLaVariable = 34.45f;
 
         // Declaración e inicialización todo de una
         long valorDeLaSegundaVariable = 23454324523453L;
@@ -30,9 +30,23 @@ class ClaseDePrueba {
         // Resto %
 
         // Este método "System.out.println()" nos permite imprimir por consola el resultado (lo veremos el jueves)
-        System.out.println(valorDeLaVariable + valorDeLaSegundaVariable);
+        //System.out.println(valorDeLaVariable + valorDeLaSegundaVariable);
 
         // Practiquen mucho, jueguen y rompan todo que no pasa nada!
         // Cualquier consulta a mi email. Saludos.
+
+        // Chequeando valores por default de tipos primitivos
+        byte variableByte = 0x00;
+        short variableShort = 1;
+        int variableInt = 4234;
+        long variableLong = 453456345634563L;  // L
+        float variableFloat = 234.56F; // F
+        double variableDouble = 234.34563456345634563456D; // D
+        char variableChar = ' ';
+        boolean variableBoolean = true; // false o true
+
+        String texto = "java 2020";
+
+        System.out.println(variableByte);
     }
 }
