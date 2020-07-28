@@ -167,23 +167,3 @@ formado por un conjunto de datos primitivos.
 #### Operadores aritméticos de Java
 
 <img src="./imagenes/operadores aritmeticos.png">
-
-### Clases concretas, estáticas y abstractas
-
-Una clase es una plantilla que define la forma de un objeto. Los objetos son instancias de una clase.
-
-### Clase Abstracta (abstract class)
-
-Son clases que no pueden ser instanciadas, es decir, no se pueden crear objetos a partir de ellas. Sirven como superclases para sus clases hijas.
-
-Sus características son:
- - No tienen cuerpo (llaves): sólo constan de signatura con paréntesis.
- - Su signatura termina con un punto y coma.
- - Los métodos abstractos sólo pueden existir dentro de una clase abstracta. De esta forma se evita que haya métodos que no se puedan ejecutar dentro de clases concretas. Visto de otra manera, si una clase incluye un método abstracto, forzosamente la clase será una clase abstracta.
- - Los métodos abstractos forzosamente habrán de estar sobreescritos en las subclases. Si una subclase no implementa un método abstracto de la superclase tiene un método no ejecutable, lo que la fuerza a ser una subclase abstracta. Para que la subclase sea concreta habrá de implementar métodos sobreescritos para todos los métodos abstractos de sus superclases.
-
-### Clase Estática (static class)
-
-La directiva static permite el acceso a métodos y variables de clase sin la necesidad de instanciar un objeto de dicha clase, permitiendo la inicialización de forma cómoda y durante la carga de clase. Además, los import estáticos mejoran la legibilidad de nuestro código, así como las clases estáticas internas la cohesión. 
-
-<hr>

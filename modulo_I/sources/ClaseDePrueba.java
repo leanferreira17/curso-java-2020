@@ -37,10 +37,6 @@ class ClaseDePrueba {
 
         // Chequeando valores por default de tipos primitivos
         byte variableByte = 0x00;
-        short variableShort = 1;
-        int variableInt = 4234;
-        long variableLong = 453456345634563L;  // L
-        float variableFloat = 234.56F; // F
         double variableDouble = 234.34563456345634563456D; // D
         char variableChar = ' ';
         boolean variableBoolean = true; // false o true
