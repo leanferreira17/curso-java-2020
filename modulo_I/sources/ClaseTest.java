@@ -20,22 +20,20 @@ class ClaseTest {
 
         // Para acceder a los miembros de clase (recordar: son los atributos y metodos) utilizamos el
         // operador "." (punto)
-        System.out.println(objetoPersona.nombre);
+        /*System.out.println(objetoPersona.nombre);
         System.out.println(objetoPersona.dni);
         System.out.println(objetoPersona.estatura);
-        System.out.println(objetoPersona.sexo);
+        System.out.println(objetoPersona.sexo);*/
 
         // Acceder a un método perteneciente a la clase Persona
-        objetoPersona.imprimirDatos();
+        //objetoPersona.imprimirDatos();
 
         /**
          * Realizar aqui los ejercicios abajo mencionados
          * */
 
-        // Ejemplo
-        NombreDeLaEntidadQueElija nombreDeLaEntidadQueElija = new NombreDeLaEntidadQueElija();
-        nombreDeLaEntidadQueElija.imprimirDatos();
-
+        Auto miAuto = new Auto();
+        miAuto.imprimirDatosCompletos();
     }
 }
 
@@ -62,8 +60,23 @@ class Persona {
  * en el metodo main que venimos usando
  */
 
-class NombreDeLaEntidadQueElija {
+class Auto {
     // atributos: int, short, boolean, String, etc...
+    String marca = "Honda";
+    float peso = 3000.00F;
 
-    // metodo void imprimirDatos() { }
+    void imprimirDatosCompletos() {
+        String separador = " - ";
+        System.out.println(marca + separador + peso);
+    }
+}
+
+class Automovil {
+    // atributos: int, short, boolean, String, etc...
+    String marca = "Honda";
+
+    void imprimirMarca() {
+        String separador = " - ";
+        System.out.println(marca + separador + ".");
+    }
 }

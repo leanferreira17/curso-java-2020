@@ -45,7 +45,7 @@ Lista de parámetros: si los hay deben ser declarados respetando la secuencia: t
     tipo de retorno + nombre del método ( lista de parámetros separados por ",") { 
     operaciones 
     return 
-    };
+    }
 
 Ejemplos:
 
