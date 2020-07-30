@@ -43,7 +43,7 @@ Los métodos son bloques de código bien definidos que contienen operaciones sob
 Lista de parámetros: si los hay deben ser declarados respetando la secuencia: tipo de dato + nombre
 
     tipo de retorno + nombre del método ( lista de parámetros separados por ",") { 
-    operaciones 
+    operaciones;
     return 
     }
 
@@ -59,4 +59,15 @@ Ejemplos:
         return cociente;
     } 
 
- 
+### Métodos constructores
+Los métodos constructores son métodos especiales que solo pueden ser invocados al momento de instanciar un objeto. 
+Se invocan utilizando la palabra reservada "new" y devuelven una referencia a la ubicación en memoria del objeto que estan
+creando. Si no declaramos un método constructor en nuestra clase, el compilador agrega uno por default para que podamos crear
+el objeto en cuestión.
+
+Podemos tener varios constructores: con parámetros y sin parámetros.
+
+#### Carga de datos por consola: Utilizando un objeto de la clase Scanner
+
+    Scanner consola = new Scanner(System.in);
+    String valorIngresadoPorConsola = consola.nextLine();  

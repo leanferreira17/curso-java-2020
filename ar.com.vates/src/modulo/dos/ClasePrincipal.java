@@ -1,3 +1,5 @@
+package modulo.dos;
+
 class ClasePrincipal {
     public static void main(String[] args) {
         int valorInt = 1;
