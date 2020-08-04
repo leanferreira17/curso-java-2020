@@ -78,4 +78,6 @@ Declaración 1 es ejecutada (solo una vez) antes de la ejecución del bloque de 
 Declaración 2 define la condición para ejecutar el bloque de código.
 
 Declaración 3 es ejecutada (cada vez) después de ejecutar el bloque de código.
+
+*Por regla general utilizamos este bucle cuando sabemos con certeza la cantidad de iteraciones que haremos.*
     
