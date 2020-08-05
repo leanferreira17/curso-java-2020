@@ -40,6 +40,26 @@ public class Ejercicios {
 
         */
 
+        /*
+            Planteo de posible solucion:
+            Revisar con el debugger agregando un breakpoint en la linea 12, como es la estructura interna de
+            los arreglos. Luego por cada item de la lista de 20 realizar la siguiente construccion:
+
+            if (arregloA[7] > arregloB[2]) {
+                System.out.println("V");
+            } else {
+                System.out.println("F");
+            }
+
+            El objetivo es listar algo de esta forma:
+            V
+            V
+            F
+            V
+            F
+            ...
+        */
+
 
     }
 }
