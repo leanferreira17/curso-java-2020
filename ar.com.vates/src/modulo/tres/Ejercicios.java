@@ -60,6 +60,32 @@ public class Ejercicios {
             ...
         */
 
+        /*
+            Dado el siguiente bloque de codigo, en el cual estamos convirtiendo un objeto String
+            a un arreglo de chars (recordemos que los String son arreglos de chars) reemplazar los
+            caracteres marcados con una "x" por el correcto y luego imprimir la frase completa.
+         */
 
+        // Ejemplo
+        String fraseDeEjemplo = "Mi autx es rojo.";
+
+        // convertimos el objeto String a un arreglo de tipo char utilizando el método toCharArray() de la
+        // clase String
+        char arregloFraseDeEjemplo [] = fraseDeEjemplo.toCharArray();
+
+        // una vez que tenemos el arreglo de tipo char vamos a reemplazar el valor de la x por el caracter correcto
+        arregloFraseDeEjemplo[6] = 'o';
+
+        // imprimimos para validar que la frase es correcta
+        System.out.println(arregloFraseDeEjemplo);
+        // notamos que cuando mandamos a imprimir un arreglo de tipo char, éste se imprime totalmente
+        // hacer la prueba para otros tipos de datos
+
+        // Reemplazar las "x" en las siguientes frases, como se mostró arriba: (el/la que se anime reemplaze
+        // tambien los caracteres que deberian llevar tilde)
+
+        String frase1 = "Ayer fxe un dxa soleadx en Cxrdoba.";
+        String frase2 = "¡Cxmo me gustxn lxs viernesx";
+        String frase3 = "Hay 10 tipxs de personxs: Las qxe conocen el cxdigo binario y las qux no.";
     }
 }
