@@ -1,8 +1,8 @@
 # Java Básico 2020 - Módulo III
 
 ### Programa
-Estructuras de datos: Arreglos. Estructuras condicionales if else. Bucles: for.
-
+Estructuras de datos: Arreglos. Estructuras condicionales if, if else, else if, switch. Bucles: for, while, do while, for each. 
+Sentencias break y continue. 
 
 ### Arreglos
 Un arreglo es un tipo de objeto en Java que nos permite almacenar datos indexados (asocia un índice a cada elemento).
@@ -19,6 +19,44 @@ Si nuestro arreglo tiene 10 elementos, los indices que tendrá seran estos: 0, 1
 Primer elemento: 0
 
 Ultimo elemento: 9 (n - 1 ó 10 - 1)
+
+#### Cómo acceder al contenido de cada casillero o celda en un arreglo?
+Para acceder al contenido indexado dentro de un arreglo utilizaremos la siguiente declaracion:
+
+    arreglo[indice];
+    tipo variable = arreglo[indice];
+
+Dado el siguiente arreglo de tipo entero con cantidad de elementos igual a 5 (n = 5) queremos multiplicar
+su 4to elemento por 100 y luego imprimirlo.
+    
+    int arregloDeEnteros [] = {1, 5, 6, 7, 2};
+    arregloDeEnteros[4] = arregloDeEnteros[4] * 100;
+    
+    System.out.println("El valor es: " + arregloDeEnteros[4]); 
+    
+Cuando inicializamos un arreglo siempre contendrá en sus elementos el valor por default que lleve su tipo.
+Por ejemplo, 
+para un arreglo de tipo int y longitud 10, será de esta forma:
+
+    int [] arreglo = new int [10];
+    0 0 0 0 0 0 0 0 0 0 // 10 elementos con valor 0  
+
+para un arreglo de tipo boolean y longitud 5, será de esta forma:
+
+    boolean arreglo [] = new boolean [5];
+    false false false false false // 5 elementos con valor false
+
+Por último, a la hora de inicializar un arreglo y conociendo los valores de antemano podemos declararlos 
+con ayuda de la siguiente estructura: 
+
+    int arreglo [] = {2, 4, 5, 6, 7, 8, 9};
+    
+Lo cual ubica al valor 2 bajo el indice 0 y al 9 en el indice 6.
+Esta forma es practica cuando sabemos los valores antes de inicializar nuestro arreglo. 
+Por ejemplo queremos construir un arreglo para guardar los posibles valores que pueda tomar la variable
+"hora del dia". Los mismos van desde 00 hasta 23, por lo tanto podemos hacer esto:
+
+    int horasDelDia [] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23};
 
 ### Uso de estructuras condicionales: if else
 Java cuenta con operadores que soportan las siguientes comparaciones:
