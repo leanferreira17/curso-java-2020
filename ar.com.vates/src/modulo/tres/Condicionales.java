@@ -3,16 +3,24 @@ package modulo.tres;
 public class Condicionales {
     public static void main(String[] args) {
 
+        // if
+        if (2 == 2) {
+            System.out.println("2 es igual a 2");
+        }
+
+        // if else
+
+        if (true == false) {
+            System.out.println("true es igual a false");
+        } else {
+            System.out.println("true no es igual a false");
+        }
+
+        // if else if
+
         int a, b, c;
         a = 2;
         b = 3;
-
-        if (a >= b) {
-            System.out.println("El valor de a es mayor o igual al valor de b");
-        } else {
-            System.out.println("El valor de a es menor al valor de b");
-        }
-
         c = 5;
 
         if (a > b) {
@@ -23,7 +31,9 @@ public class Condicionales {
             System.out.println("a es menor que b y c");
         }
 
+
         // uso del switch
+
         int diaDeLaSemana = 4;
         String nombreDelDia = "";
 

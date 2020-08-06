@@ -60,6 +60,20 @@ public class Ejercicios {
             ...
         */
 
+        if (arregloA[6] >= arregloB[0]) {
+            System.out.println("V");
+        } else {
+            System.out.println("F");
+        }
+
+        if (arregloA[3] > arregloB[2]) {
+            System.out.println("V");
+        } else {
+            System.out.println("F");
+        }
+
+        System.out.println(arregloA.length);
+
         /*
             Dado el siguiente bloque de codigo, en el cual estamos convirtiendo un objeto String
             a un arreglo de chars (recordemos que los String son arreglos de chars) reemplazar los
