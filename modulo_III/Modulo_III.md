@@ -1,7 +1,8 @@
 # Java Básico 2020 - Módulo III
 
 ### Programa
-Estructuras de datos: Arreglos. Estructuras condicionales if, if else, else if, switch. Bucles: for, while, do while, for each. 
+Estructuras de datos: Arreglos. Estructuras condicionales if, if else, else if, switch. 
+Bucles: for, while, do while. 
 Sentencias break y continue. 
 
 ### Arreglos
@@ -102,11 +103,14 @@ Java cuenta con los siguientes condicionales:
             // bloque de código que será ejecutado si las condiciones 1 y 2 son false
     }
     
- ### Bucles: for
+ ### Bucles: 
+ #### for
  Un bucle es una estructura que nos permite iterar una determinada cantidad de ciclos (vueltas) y ejecutar un bloque
  de código cada vez.
  
- ### Sintaxis
+ *Utilizamos este bucle cuando sabemos con certeza la cantidad de iteraciones que haremos.*
+ 
+ #### Sintaxis
     for (declaración 1; declaración 2; declaración 3) {
         // bloque de código que será ejecutado en cada iteración
     }  
@@ -117,5 +121,79 @@ Declaración 2 define la condición para ejecutar el bloque de código.
 
 Declaración 3 es ejecutada (cada vez) después de ejecutar el bloque de código.
 
-*Por regla general utilizamos este bucle cuando sabemos con certeza la cantidad de iteraciones que haremos.*
+#### while
+
+*Utilizamos este bucle cuando NO sabemos con certeza la cantidad de iteraciones que haremos.*
+
+Este tipo de bucle itera y ejecuta un bloque de código siempre y cuando la condición que se evalua sea "true".
+
+#### Sintaxis
+
+    while (condicion a evaluar) {
+        bloque de código que se ejecutará cada vez
+    }
     
+    int valor = 5;
+    
+    while (valor < 10) {
+        System.out.println("El valor es: " + valor);
+        valor = valor + 1;
+    }
+    
+Esto imprimirá por consola lo siguiente:
+
+    El valor es: 5
+    El valor es: 6
+    El valor es: 7
+    El valor es: 8
+    El valor es: 9
+
+#### do while
+
+Este bucle es una variante del while, la diferencia es que ejecuta el bloque de código antes de evaluar
+la condición. Tomemos el ejemplo anterior y cambiemos la condición:
+
+#### Sintaxis
+
+        do {
+            bloque de código que se ejecutará cada vez
+        } 
+        while (condicion a evaluar);     
+        
+        int valor = 5;
+        
+        do {
+            System.out.println("El valor es: " + valor);
+            valor = valor + 1;
+        }
+        while (valor > 10);
+      
+Esto imprimirá por consola lo siguiente:
+
+    El valor es: 5
+        
+La diferencia radica en que el bloque de código se ejecutará al menos una vez por mas que la 
+condición sea falsa.
+
+### Uso de la declaración break
+Cuando estamos dentro de un bucle, sea cual sea, tenemos la posibilidad de salirnos de él con la declaración
+llamada "break". Vamos a ver cómo se usa:
+
+    for (int i = 0; i < 10000; i++) {
+        if (i == 5) {
+            System.out.println("Fin del bucle for.");
+            break;
+        }
+        System.out.println("El valor de i es: " + i);
+    }
+
+### Uso de la declaración continue
+Esta declaración es similar al break solo que en lugar de salir del bucle nos permite saltarnos esa iteración
+y continuar con la siguiente. Veamos un ejemplo:
+
+    for (int i = 0; i < 10; i++) {
+            if (i == 5) {
+                continue;
+            }
+            System.out.println("El valor de i es: " + i);
+    }
