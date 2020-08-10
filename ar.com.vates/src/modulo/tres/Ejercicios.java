@@ -9,8 +9,8 @@ public class Ejercicios {
 
         */
 
-        int arregloA [] = {23, 56, 67, 74, 34, 78, 29, 19};
-        int arregloB [] = {65, 23, 13, 56, 68, 54, 98, 11, 24, 67};
+        int arregloA[] = {23, 56, 67, 74, 34, 78, 29, 19};
+        int arregloB[] = {65, 23, 13, 56, 68, 54, 98, 11, 24, 67};
 
         /*
         Por ejemplo:
@@ -58,21 +58,42 @@ public class Ejercicios {
             V
             F
             ...
+
+            Otra forma de comprobar esto es evaluar la expresión antes de imprimirla:
+            System.out.println(arregloA[6] >= arregloB[0]); // imprimirá true o false
         */
 
-        if (arregloA[6] >= arregloB[0]) {
-            System.out.println("V");
-        } else {
-            System.out.println("F");
+        // Tomemos en cuenta que cada expresion de esta forma: a != b arrojará como resultado un valor boolean true o false
+        // entonces podemos pensar en que cada comparación es en sí misma un tipo boolean, por ende podemos crear un arreglo
+        // de este tipo y luego iterarlo mediante un bucle. Interesante es ver cuantas lineas de código nos ahorramos haciendo
+        // totalmente performante y mantenible nuestro algoritmo
+
+        boolean[] comparaciones = {
+                arregloA[6] >= arregloB[0],
+                arregloA[3] > arregloB[2],
+                arregloA[4] < arregloB[3],
+                arregloA[0] == arregloB[1],
+                arregloA[1] != arregloB[6],
+                arregloA[2] == arregloB[5],
+                arregloA[5] > arregloB[4],
+                arregloA[6] <= arregloB[2],
+                arregloA[7] == arregloB[3],
+                arregloA[6] > arregloB[2],
+                arregloA[6] >= arregloB[0],
+                arregloA[3] > arregloB[2],
+                arregloA[4] <= arregloB[3],
+                arregloA[0] == arregloB[1],
+                arregloA[1] != arregloB[4],
+                arregloA[2] == arregloB[5],
+                arregloA[5] >= arregloB[8],
+                arregloA[6] == arregloB[9],
+                arregloA[7] != arregloB[7],
+                arregloA[6] >= arregloB[9]};
+
+        for (int i = 0; i < comparaciones.length; i++) {
+            imprimirResultadoDeLaComparacion(comparaciones[i]);
         }
 
-        if (arregloA[3] > arregloB[2]) {
-            System.out.println("V");
-        } else {
-            System.out.println("F");
-        }
-
-        System.out.println(arregloA.length);
 
         /*
             Dado el siguiente bloque de codigo, en el cual estamos convirtiendo un objeto String
@@ -85,7 +106,7 @@ public class Ejercicios {
 
         // convertimos el objeto String a un arreglo de tipo char utilizando el método toCharArray() de la
         // clase String
-        char arregloFraseDeEjemplo [] = fraseDeEjemplo.toCharArray();
+        char arregloFraseDeEjemplo[] = fraseDeEjemplo.toCharArray();
 
         // una vez que tenemos el arreglo de tipo char vamos a reemplazar el valor de la x por el caracter correcto
         arregloFraseDeEjemplo[6] = 'o';
@@ -101,5 +122,9 @@ public class Ejercicios {
         String frase1 = "Ayer fxe un dxa soleadx en Cxrdoba.";
         String frase2 = "¡Cxmo me gustxn lxs viernesx";
         String frase3 = "Hay 10 tipxs de personxs: Las qxe conocen el cxdigo binario y las qux no.";
+    }
+
+    static void imprimirResultadoDeLaComparacion(boolean expresion) {
+        System.out.println(expresion);
     }
 }
