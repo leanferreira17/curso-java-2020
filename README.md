@@ -41,7 +41,6 @@
 - Comentarios y Java Doc
 - Java Collections
 - Manejo de excepciones. Checked y unchecked exceptions
-- Debugging
 
 **Módulo VI**
 - Manejo de librerias con Maven

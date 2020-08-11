@@ -197,3 +197,32 @@ y continuar con la siguiente. Veamos un ejemplo:
             }
             System.out.println("El valor de i es: " + i);
     }
+    
+### Uso de la sentencia switch
+Utilizamos esta estructura cuando tenemos varias opciones y necesitamos ejecutar un bloque de código específico 
+para cada una.
+
+#### Sintaxis
+
+    switch(expresión) {
+      case 1:
+        // bloque de código a ejecutarse si hay coincidencia
+        break;
+      case 2:
+        // bloque de código a ejecutarse si hay coincidencia
+        break;
+      default:
+        // bloque de código a ejecutarse si no hay coincidencias
+        // puede estar o no
+    }
+    
+Asi es como funciona:
+
+- La expresión es evaluada solo una vez.
+- La expresión puede ser de tipo numerico o String (revisar detalles del JDK).
+- El valor de la expresión es comparado con los valores de los casos.
+- Si hay una coincidencia entre los valores, entonces el bloque de código asociado se ejecutará.
+- Los palabras reservadas default y break son opcionales.
+
+
+    
