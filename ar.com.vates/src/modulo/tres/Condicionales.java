@@ -35,7 +35,7 @@ public class Condicionales {
 
 
         // Uso del switch con expresión de tipo numérica
-        int diaDeLaSemana = 4;
+        int diaDeLaSemana = 10;
         String nombreDelDia = "";
 
         switch (diaDeLaSemana) {
@@ -59,16 +59,18 @@ public class Condicionales {
                 break;
             default:
                 nombreDelDia = "Domingo";
+                break;
         }
 
         System.out.println("El valor " + diaDeLaSemana + " corresponde al día " + nombreDelDia);
 
         // uso del switch para dar el mismo comportamiento a un grupo de valores (casos)
         Random ruleta = new Random();
-        int minimo = 0;
-        int maximo = 11;
+        int minimo = 0; // 20
+        int maximo = 11; // 50
 
-        int nota = ruleta.nextInt(maximo - minimo);
+        //int nota = ruleta.nextInt(maximo - minimo);
+        int nota = 10;
         String devolucion = "";
 
         switch (nota) {
@@ -94,7 +96,7 @@ public class Condicionales {
         System.out.println("Obtuviste un " + nota + ". La devolución del profesor es: " + devolucion);
 
         // uso del switch con expresión de tipo String
-        String expresion = "Java";
+        String expresion = "Javauu";
 
         switch (expresion) {
             case "Angular":

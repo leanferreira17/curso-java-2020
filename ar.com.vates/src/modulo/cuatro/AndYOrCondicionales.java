@@ -9,12 +9,12 @@ public class AndYOrCondicionales {
         int maximo = 100;
 
         Persona objetoPersona = new Persona(
-                "Maria",
-                'F',
-                random.nextInt(maximo - minimo) + minimo,
-                random.nextBoolean(),
-                random.nextBoolean(),
-                random.nextBoolean()
+                "Pedro",
+                'M',
+                50 ,//random.nextInt(maximo - minimo) + minimo,
+                true, //random.nextBoolean(),
+                true, //random.nextBoolean(),
+                false //random.nextBoolean()
         );
 
         System.out.println(objetoPersona.toString());
@@ -29,6 +29,16 @@ public class AndYOrCondicionales {
 
         Licencia.otorgarLicencia(objetoPersona);
 
+        if (4 == 8 && 6 > 9 && 3 == 4 && !(6 > 5) || 5 == 5) {
+
+        } else {
+
+        }
+
     }
+}
+
+class Auto {
+    String marca;
 }
 

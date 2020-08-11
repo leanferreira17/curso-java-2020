@@ -40,7 +40,7 @@ public class Ejercicios2 {
         LenguajeDeProgramacion lenguaje5 = new LenguajeDeProgramacion("Javascript", 1995);
         LenguajeDeProgramacion lenguaje6 = new LenguajeDeProgramacion("Go", 2009);
         LenguajeDeProgramacion lenguaje7 = new LenguajeDeProgramacion("Perl", 1987);
-        LenguajeDeProgramacion lenguaje8 = new LenguajeDeProgramacion("Sql", 1974);
+        LenguajeDeProgramacion lenguaje8 = new LenguajeDeProgramacion("Sqlaaaaaaaaaaaa", 1974);
 
         LenguajeDeProgramacion lenguajes[] = {
                 lenguaje1, lenguaje2, lenguaje3, lenguaje4, lenguaje5, lenguaje6, lenguaje7, lenguaje8

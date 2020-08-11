@@ -91,7 +91,8 @@ public class Ejercicios {
                 arregloA[6] >= arregloB[9]};
 
         for (int i = 0; i < comparaciones.length; i++) {
-            imprimirResultadoDeLaComparacion(comparaciones[i]);
+            //imprimirResultadoDeLaComparacion(comparaciones[i]);
+            System.out.println(comparaciones[i]);
         }
 
 

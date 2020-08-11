@@ -2,7 +2,7 @@ package modulo.cuatro;
 
 public class Licencia {
     static void otorgarLicencia(Persona persona) {
-        if ((persona.getEdad() >= 16 || persona.getEdad() <= 65) &&
+        if ((persona.getEdad() >= 16 && persona.getEdad() <= 65) &&
                 persona.isNacioEnArgentina() &&
                 persona.isPasoElExamenDeVista() &&
                 persona.isPasoElExamenTeorico()) {

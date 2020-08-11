@@ -1,10 +1,10 @@
 package modulo.cuatro.modificadores.base;
 
-//import modulo.cuatro.modificadores.pordefault.ReciboDeSueldo;
 //import modulo.cuatro.modificadores.privado.CuentaBancaria;
+//import modulo.cuatro.modificadores.pordefault.ReciboDeSueldo;
 import modulo.cuatro.modificadores.protegidos.ClaseHija;
-//import modulo.cuatro.modificadores.protegidos.ClaseProtegida;
 import modulo.cuatro.modificadores.publico.Anuncio;
+//import modulo.cuatro.modificadores.protegidos.ClaseProtegida;
 
 public class ClaseBasePrincipal {
     public static void main(String[] args) {
@@ -25,5 +25,12 @@ public class ClaseBasePrincipal {
         //ClaseHija claseHija = new ClaseHija();
 
         //System.out.println("Codigo de la clase padre: " + claseHija.getCodigo());
+
+        CuentaBancaria cuentaBancaria = new CuentaBancaria();
+        cuentaBancaria.setTitularDeCuenta("Juan Perez");
+
+        System.out.println(cuentaBancaria.getTitularDeCuenta());
+
+
     }
 }

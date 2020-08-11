@@ -5,8 +5,8 @@ public class EstructuraForEach {
 
         int arreglo [] = {0, 1, 2, 3, 4, 5};
 
-        for (int elemento: arreglo) {
-            System.out.println(elemento);
+        for (int elementoDeclaradoPorElUsuario: arreglo) {
+            System.out.println(elementoDeclaradoPorElUsuario);
         }
 
         Curso [] cursos = {
