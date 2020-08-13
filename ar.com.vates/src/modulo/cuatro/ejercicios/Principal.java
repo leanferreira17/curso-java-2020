@@ -3,7 +3,21 @@ package modulo.cuatro.ejercicios;
 public class Principal {
     public static void main(String[] args) {
         // desarrollar los ejercicios aqui
+        Consola consola = new Consola();
+        Cliente cliente1 = new Cliente();
+        cliente1.setApellido(consola.capturarValorString("Ingresar apellido: "));
+        cliente1.setArgentino(consola.capturarValorBoolean("Ingresar true o false si es argentino: "));
+        //cliente1.setApellido();
 
+        Cliente cliente2 = new Cliente();
+        System.out.println("Apellido cliente 2: " + cliente2.getApellido());
+
+        Banco banco = new Banco();
+        boolean resultado = banco.otorgarPrestamo(cliente1);
+
+        if (resultado) {
+            System.out.println("se le otorgo el prestamo");
+        }
     }
 
     /*
