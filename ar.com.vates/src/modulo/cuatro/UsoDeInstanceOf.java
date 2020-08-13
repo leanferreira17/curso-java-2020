@@ -5,7 +5,7 @@ public class UsoDeInstanceOf {
         String comprobacion = "";
         Integer integer = new Integer(7);
 
-        comprobacion = (integer instanceof Object) ? "Es una instancia de Object" : "No es una instancia de Integer";
+        comprobacion = (integer instanceof Object) ? "Es una instancia de Object" : "No es una instancia de Object";
         System.out.println(comprobacion);
     }
 }
