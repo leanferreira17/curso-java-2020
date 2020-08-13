@@ -4,8 +4,8 @@ public class TestHerencia {
     public static void main(String[] args) {
         /*
             Dadas las clases Padre e Hijo resolver.
-            - Agregar constructor, getters y setter en la super clase
-            - Realizar la herencia
+            - Agregar constructor, getters y setter en ambas clases
+            - Realizar la herencia (extends)
             - Instanciar un objeto Hijo
 
             En la clase Hijo implementar métodos que permitan imprimir los datos que se listan abajo.
