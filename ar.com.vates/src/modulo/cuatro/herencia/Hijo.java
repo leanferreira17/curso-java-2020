@@ -1,4 +1,5 @@
 package modulo.cuatro.herencia;
 
-public class Hijo extends Padre{
+public class Hijo {
+    private String nombre;
 }
