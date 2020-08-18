@@ -15,5 +15,25 @@ public class TestHerencia {
             - Nombre y apellido del hijo
             - Cantidad de años que se llevan (edad del padre - edad del hijo)
         */
+
+        Hijo objetoHijo = new Hijo(
+                "Luis",
+                "Spinetta",
+                "Marron",
+                1.76F,
+                "Músico",
+                false,
+                62,
+                "Dante",
+                40);
+
+        System.out.println("### Datos completos del padre ###");
+        objetoHijo.imprimirDatosCompletosDelPadre();
+
+        System.out.println("### Nombre y apellido del hijo ###");
+        objetoHijo.imprimirNombreYApellidoHijo();
+
+        System.out.println("### Cantidad de años que se llevan ###");
+        objetoHijo.imprimirDiferenciaDeEdad();
     }
 }
