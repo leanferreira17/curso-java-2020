@@ -1,10 +1,7 @@
 package modulo.cinco.interfaces.clases;
 
-import modulo.cinco.interfaces.Accionable;
-
-public class Persona implements Accionable {
-    @Override
-    public String saludar() {
-        return null;
-    }
+public abstract class Persona {
+    public abstract String saludar();
+    public abstract void caminar();
+    public abstract void nadar();
 }

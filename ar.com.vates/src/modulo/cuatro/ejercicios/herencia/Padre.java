@@ -1,6 +1,6 @@
 package modulo.cuatro.ejercicios.herencia;
 
-public class Padre {
+public class Padre extends Object {
     private String nombre;
     private String apellido;
     private String colorDeOjos;
@@ -9,18 +9,18 @@ public class Padre {
     private boolean casado;
     private int edad;
 
-    @Override
-    public String toString() {
-        return "Padre{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", colorDeOjos='" + colorDeOjos + '\'' +
-                ", estatura=" + estatura +
-                ", ocupacion='" + ocupacion + '\'' +
-                ", casado=" + casado +
-                ", edad=" + edad +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Padre{" +
+//                "nombre='" + nombre + '\'' +
+//                ", apellido='" + apellido + '\'' +
+//                ", colorDeOjos='" + colorDeOjos + '\'' +
+//                ", estatura=" + estatura +
+//                ", ocupacion='" + ocupacion + '\'' +
+//                ", casado=" + casado +
+//                ", edad=" + edad +
+//                '}';
+//    }
 
     public Padre(String nombre, String apellido, String colorDeOjos, float estatura, String ocupacion, boolean casado, int edad) {
         this.nombre = nombre;
@@ -30,6 +30,14 @@ public class Padre {
         this.ocupacion = ocupacion;
         this.casado = casado;
         this.edad = edad;
+    }
+
+    public Padre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Padre() {
+
     }
 
     public String getNombre() {
@@ -88,5 +96,7 @@ public class Padre {
         this.edad = edad;
     }
 
-
+    public String saludar() {
+        return "Hola";
+    }
 }

@@ -5,4 +5,14 @@ public class Japones extends Persona {
     public String saludar() {
         return "善日";
     }
+
+    @Override
+    public void caminar() {
+
+    }
+
+    @Override
+    public void nadar() {
+
+    }
 }

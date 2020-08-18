@@ -2,7 +2,7 @@
 
 ### Programa
 Polimorfismo: concepto. Abstracción: concepto. Clases abstractas y estáticas.Uso de final. Uso de instanceof. 
-Operador ternario. 
+Operador ternario. Interfaces.
 
 ### Polimorfismo
 Se refiere a la propiedad por la que es posible enviar mensajes sintácticamente iguales a objetos de tipos distintos. El único requisito que deben cumplir los objetos es saber responder al mensaje que se les envía.
@@ -107,3 +107,13 @@ Es la forma resumida del bloque if else:
     System.out.println(mensaje);
 
     
+### Interfaces
+Una interfaz es como una clase Java pero solo tiene constantes estáticas y métodos abstractos. Java usa la interfaz para implementar herencia múltiple. Una clase Java puede implementar múltiples interfaces Java. Todos los métodos en una interfaz son implícitamente públicos y abstractos.
+Diferencias entre Interfaces y Clases Abstractas
+
+- La diferencia principal es que los métodos de las interfaces son implicitamente abstractos y no pueden tener implementaciones. Una clase abstracta Java puede tener métodos de instancia que implementan un comportamiento por default.
+- Todas las variables declaradas en una interface son de tipo final por default. Una clase abstracta puede contener variables que no sean final.
+- Los miembros de una interface son publicos por default. En una clase abstracta los miembros pueden ser private, public, protected.
+- Una interface deberia ser implementada utilizando la palabra reservada "implements"; una clase abstracta deberia ser heredada utilizando la palabra "extends".
+- Una interface puede heredar solo de otra interface, una clase abstracta puede heredar de otra clase e implementar multiples interfaces.
+- Una clase puede implementar múltiples interfaces pero solo puede heredar de una clase padre.

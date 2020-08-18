@@ -27,6 +27,9 @@ public class TestHerencia {
                 "Dante",
                 40);
 
+        Padre padreNuevo = new Padre();
+        System.out.println(padreNuevo.toString());
+
         System.out.println("### Datos completos del padre ###");
         objetoHijo.imprimirDatosCompletosDelPadre();
 
@@ -35,5 +38,13 @@ public class TestHerencia {
 
         System.out.println("### Cantidad de años que se llevan ###");
         objetoHijo.imprimirDiferenciaDeEdad();
+
+        Hijo hijo = new Hijo();
+        System.out.println(hijo.toString());
+
+        System.out.println(hijo.saludar());
+        Padre padre = new Padre();
+
+        System.out.println(padre.saludar());
     }
 }
