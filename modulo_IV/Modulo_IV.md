@@ -146,27 +146,3 @@ Para poder hacer uso del constructor de la clase padre utilizamos (desde la clas
 
 Para acceder a los miembros de la clase padre utilizamos la palabra *super*
 
-### Polimorfismo
-Se refiere a la propiedad por la que es posible enviar mensajes sintácticamente iguales a objetos de tipos distintos. El único requisito que deben cumplir los objetos es saber responder al mensaje que se les envía.
-
-### Abstracción
-Pensar en términos de objetos es muy parecido a cómo lo haríamos en la vida real. Una analogía sería modelizar un auto en un esquema de POO. Diríamos que el auto es el elemento principal que tiene una serie de características, como podrían ser el color, el modelo o la marca. La capacidad de reconocer los elementos comúnes y generalizarlos es lo que llamamos justamente abstracción.
-Clases concretas, estáticas y abstractas
-
-Una clase es una plantilla que define la forma de un objeto. Los objetos son instancias de una clase.
-
-
-### Clase Abstracta (abstract class)
-Son clases que no pueden ser instanciadas, es decir, no se pueden crear objetos a partir de ellas. Sirven como superclases para sus clases hijas.
-
-Sus características son:
-- No tienen cuerpo (llaves): sólo constan de signatura con paréntesis.
-- Su signatura termina con un punto y coma.
-- Los métodos abstractos sólo pueden existir dentro de una clase abstracta. De esta forma se evita que haya métodos que no se puedan ejecutar dentro de clases concretas. Visto de otra manera, si una clase incluye un método abstracto, forzosamente la clase será una clase abstracta.
-- Los métodos abstractos forzosamente habrán de estar sobreescritos en las subclases. Si una subclase no implementa un método abstracto de la superclase tiene un método no ejecutable, lo que la fuerza a ser una subclase abstracta. Para que la subclase sea concreta habrá de implementar métodos sobreescritos para todos los métodos abstractos de sus superclases.
-
-### Clase Estática (static class)
-La directiva static permite el acceso a métodos y variables de clase sin la necesidad de instanciar un objeto de dicha clase, permitiendo la inicialización de forma cómoda y durante la carga de clase. Además, los import estáticos mejoran la legibilidad de nuestro código, así como las clases estáticas internas la cohesión.
-
-### Uso de instanceof
-El operador instanceof sirve para conocer si un objeto es de un tipo determinado. Por tipo, nos referimos a clase o interfaz (interface), es decir, si el objeto pasaría el test «ES UN» para esa clase o ese interfaz, especificado a la derecha del operador. 
