@@ -57,9 +57,8 @@ public class TestAbstracta {
             - Utilizando algun bucle recorrer el arreglo y hacer uso del metodo toString() de cada clase
             para imprimir las caracteristicas de cada computadora.
             - Aquellas cuyo atributo "Overclocked" sea false deberan ser modificadas y agregarles el doble de RAM
-            (utilizando setCantidadDeRam())
+            (utilizando setCantidadDeRam()) y el atributo "Overclocked" debera ser actualizado a "true"
             - Volver a listarlas
-
         */
     }
 }
