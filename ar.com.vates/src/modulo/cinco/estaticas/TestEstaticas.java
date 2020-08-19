@@ -11,7 +11,7 @@ public class TestEstaticas {
         EstadisticasCovid19Argentina objetoEstadistica = new EstadisticasCovid19Argentina();
         objetoEstadistica.getVersion();
 
-        Math.PI
+        // Math.PI
 
         System.out.println(EstadisticasCovid19Argentina.getCasos());
 

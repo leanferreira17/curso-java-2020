@@ -18,6 +18,12 @@ Una clase es una plantilla que define la forma de un objeto. Los objetos son ins
 Son clases que no pueden ser instanciadas, es decir, no se pueden crear objetos a partir de ellas. 
 Sirven como superclases para sus clases hijas.
 
+    public abstract class Persona {
+        protected String especie = "Humana";
+    
+        public abstract String getEspecie();
+    }
+
 Sus métodos tiene las siguientes características:
 - No tienen cuerpo (llaves): sólo constan de signatura con paréntesis.
 - Su signatura termina con un punto y coma.
