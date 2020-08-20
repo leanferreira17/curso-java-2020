@@ -1,5 +1,7 @@
 package modulo.cinco.ejercicios;
 
+import modulo.cinco.ejercicios.pcs.Windows;
+
 public class TestAbstracta {
     public static void main(String[] args) {
         /*
@@ -60,5 +62,49 @@ public class TestAbstracta {
             (utilizando setCantidadDeRam()) y el atributo "Overclocked" debera ser actualizado a "true"
             - Volver a listarlas
         */
+
+        // accedemos al método estático, de no ser estático no podriamos usarlo en este contexto
+        Computadora[] listado = crearInstanciasDeComputadora();
+        recorrerYListarPcs(listado);
+
+        comprobarOverclockeoYModificarSiFueseFalso(listado);
+        recorrerYListarPcs(listado);
+
+
+        // vemos que en ningún lado nos aparece la clase, son todas computadoras
+        // busquemos la forma de que cada una tenga el valor de su clase en el toString()
     }
+
+    public static Computadora[] crearInstanciasDeComputadora() {
+        Windows pcWindows = new Windows();
+
+        // qué pasa si no seteo los parámetros y llamo al toString() del padre?
+        pcWindows.setCantidadeNucleos(8);
+        pcWindows.setCantidadDeRam(16);
+        pcWindows.setVersionDelSistema("10");
+        // pcWindows.setOverclockear(false); // no hace falta pasarlo, ya que en la superclase por default es false
+
+        Computadora[] listadoDePcs = {
+                pcWindows
+        };
+
+        return listadoDePcs;
+    }
+
+    public static void recorrerYListarPcs(Computadora[] listado) {
+        for (Computadora pc : listado) {
+            System.out.println(pc.toString());
+        }
+    }
+
+    public static void comprobarOverclockeoYModificarSiFueseFalso(Computadora[] listado) {
+        for (Computadora pc : listado) {
+            // si devuelve false lo negamos con "!" lo cual hace true la condicion y ejecuta el bloque if
+            if (!pc.isOverclocked()) {
+                pc.setOverclockear(true);
+                pc.setCantidadDeRam(pc.getCantidadDeRam() * 2);
+            }
+        }
+    }
+
 }
