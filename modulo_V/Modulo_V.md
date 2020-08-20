@@ -2,7 +2,7 @@
 
 ### Programa
 Polimorfismo: concepto. Abstracción: concepto. Clases abstractas y estáticas.Uso de final. Uso de instanceof. 
-Operador ternario. Interfaces.
+Operador ternario. Interfaces. Estructuras de datos: ArrayList, TreeSet y HashMap.
 
 ### Polimorfismo
 Se refiere a la propiedad por la que es posible enviar mensajes sintácticamente iguales a objetos de tipos distintos. El único requisito que deben cumplir los objetos es saber responder al mensaje que se les envía.
@@ -123,3 +123,41 @@ Diferencias entre Interfaces y Clases Abstractas
 - Una interface deberia ser implementada utilizando la palabra reservada "implements"; una clase abstracta deberia ser heredada utilizando la palabra "extends".
 - Una interface puede heredar solo de otra interface, una clase abstracta puede heredar de otra clase e implementar multiples interfaces.
 - Una clase puede implementar múltiples interfaces pero solo puede heredar de una clase padre.
+
+
+    public interface Accionable {
+        Date fechaDeCreacion = new Date();
+        String caminar();
+        String nadar();
+    }
+    
+    
+    class Persona implements Accionable {
+    
+        @Override
+        public String caminar() {
+            return null;
+        }
+        
+        @Override
+        public String nadar() {
+            return null;
+        }
+    }
+    
+*Una interfaz especifica qué se debe hacer, pero no cómo hacerlo.*
+
+### Estructuras de datos: ArrayList, TreeSet y HashMap
+### ArrayList
+Esta clase es similar a la estructura ya conocida del arreglo[], la diferencia radica en que los ArrayList
+son de tamaño dinámico. Los arreglos no. Es beneficioso utilizarlos ya que poseen métodos bastante útiles.
+https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+
+### TreeSet
+Esta clase maneja una estructura interna de tipo árbol. Los elementos se acomodan de forma ordenada segun su tipo.
+https://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html
+
+### HashMap
+Este objeto almacena los valores bajo la siguiente forma: "key/value" o "clave/valor". Como los dos anteriores, cuenta con 
+diversos métodos para facilitarnos un poco la vida a todos.
+https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html

@@ -5,14 +5,4 @@ public class Argentino extends Persona {
     public String saludar() {
         return "Buen día";
     }
-
-    @Override
-    public void caminar() {
-
-    }
-
-    @Override
-    public void nadar() {
-
-    }
 }

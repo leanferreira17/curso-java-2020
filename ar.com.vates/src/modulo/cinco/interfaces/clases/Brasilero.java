@@ -5,14 +5,4 @@ public class Brasilero extends Persona {
     public String saludar() {
         return "Bom dia";
     }
-
-    @Override
-    public void caminar() {
-
-    }
-
-    @Override
-    public void nadar() {
-
-    }
 }

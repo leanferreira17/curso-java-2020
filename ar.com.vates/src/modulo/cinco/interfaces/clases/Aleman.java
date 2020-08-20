@@ -5,14 +5,4 @@ public class Aleman extends Persona{
     public String saludar() {
         return "Gutenmorgen";
     }
-
-    @Override
-    public void caminar() {
-
-    }
-
-    @Override
-    public void nadar() {
-
-    }
 }
