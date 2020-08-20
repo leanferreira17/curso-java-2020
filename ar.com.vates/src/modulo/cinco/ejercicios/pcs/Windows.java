@@ -43,4 +43,9 @@ public class Windows extends Computadora {
     public void setVersionDelSistema(String versionDelSistema) {
         super.versionDelSistema = versionDelSistema;
     }
+
+    @Override
+    public String toString() {
+        return super.toString().replace("Computadora", this.getClass().getSimpleName());
+    }
 }

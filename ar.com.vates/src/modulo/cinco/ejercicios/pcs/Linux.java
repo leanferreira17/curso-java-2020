@@ -43,4 +43,9 @@ public class Linux extends Computadora {
     public void setVersionDelSistema(String versionDelSistema) {
         super.versionDelSistema = versionDelSistema;
     }
+
+    @Override
+    public String toString() {
+        return "Soy Linux";
+    }
 }

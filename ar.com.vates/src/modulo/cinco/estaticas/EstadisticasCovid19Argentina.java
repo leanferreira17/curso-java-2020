@@ -2,7 +2,8 @@ package modulo.cinco.estaticas;
 
 public class EstadisticasCovid19Argentina {
     public static long estimacionDeCasosPorDia = 2000;
-    public static final int cantidadDeDiasPromedioMensual = 30;
+    // public static final int cantidadDeDiasPromedioMensual = 30; // constante
+    public static final int CANTIDAD_DE_DIAS_PROMEDIO_MENSUAL = 30;
     public static long casos = 0;
     private String version = "1.0.0 A";
     private static long cantidadDeReversionados = 0;

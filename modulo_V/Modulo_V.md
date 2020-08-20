@@ -80,7 +80,7 @@ Todo lo que sea estático es compartido por las instancias de esa clase.
 Este modificador define las siguientes restricciones:
 - Utilizada en variables: no permite que el valor sea cambiado. Es una especie de candado.
 - Utilizada en metodos: no permite la re definicion de un método en una subclase. No permite sobreescribirlos.
-- Utilizada en objetos: no permite heredar. Evita la creación de una subclase.
+- Utilizada en clases: no permite heredar. Evita la creación de una subclase.
 
 ### Variables constantes en Java
 Cuando tenemos definida una variable como: 

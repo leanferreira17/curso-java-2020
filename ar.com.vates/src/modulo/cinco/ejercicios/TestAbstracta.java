@@ -1,5 +1,7 @@
 package modulo.cinco.ejercicios;
 
+import modulo.cinco.ejercicios.pcs.Linux;
+import modulo.cinco.ejercicios.pcs.MSDos;
 import modulo.cinco.ejercicios.pcs.Windows;
 
 public class TestAbstracta {
@@ -73,10 +75,17 @@ public class TestAbstracta {
 
         // vemos que en ningún lado nos aparece la clase, son todas computadoras
         // busquemos la forma de que cada una tenga el valor de su clase en el toString()
+
+        MSDos msDos = new MSDos();
+
+        if (msDos instanceof Computadora) {
+            System.out.println("Si, apunta a ese tipo");
+        }
     }
 
     public static Computadora[] crearInstanciasDeComputadora() {
         Windows pcWindows = new Windows();
+        Linux pcLinux = new Linux();
 
         // qué pasa si no seteo los parámetros y llamo al toString() del padre?
         pcWindows.setCantidadeNucleos(8);
@@ -85,7 +94,8 @@ public class TestAbstracta {
         // pcWindows.setOverclockear(false); // no hace falta pasarlo, ya que en la superclase por default es false
 
         Computadora[] listadoDePcs = {
-                pcWindows
+                pcWindows,
+                pcLinux
         };
 
         return listadoDePcs;

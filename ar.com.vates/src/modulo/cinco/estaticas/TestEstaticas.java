@@ -4,6 +4,10 @@ public class TestEstaticas {
     public static void main(String[] args) {
         // para acceder a un miembro de clase marcado como static
         // utilizamos: nombre de la clase + "." + atributo/metodo static
+        EstadisticasCovid19Argentina objeto = new EstadisticasCovid19Argentina();
+
+        // EstadisticasCovid19Argentina.CANTIDAD_DE_DIAS_PROMEDIO_MENSUAL;
+
         System.out.println(EstadisticasCovid19Argentina.estimacionDeCasosPorDia);
          // cantidadDeDiasPromedioMensual;
         EstadisticasCovid19Argentina.getCasos();
@@ -11,7 +15,7 @@ public class TestEstaticas {
         EstadisticasCovid19Argentina objetoEstadistica = new EstadisticasCovid19Argentina();
         objetoEstadistica.getVersion();
 
-        // Math.PI
+        //Math.PI
 
         System.out.println(EstadisticasCovid19Argentina.getCasos());
 
