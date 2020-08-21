@@ -5,7 +5,7 @@ public interface AnalisisDeTexto {
 
     String obtenerPrimerPalabra(String frase);
 
-    String obtenerCantidadDePalabras(String frase);
+    int obtenerCantidadDePalabras(String frase);
 
     String convertirTodaLaFraseAMayusculas(String frase);
 
