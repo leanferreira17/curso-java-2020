@@ -1,7 +1,7 @@
 package modulo.cinco.ejercicios.interfaces;
 
 public interface AnalisisDeTexto {
-    String reemplazarPalabra(String palabraAReemplazar);
+    String reemplazarPalabra(String palabraAReemplazar, String frase);
 
     String obtenerPrimerPalabra(String frase);
 
