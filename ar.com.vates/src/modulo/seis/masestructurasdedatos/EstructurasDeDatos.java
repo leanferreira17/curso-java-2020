@@ -1,5 +1,7 @@
 package modulo.seis.masestructurasdedatos;
 
+import modulo.cuatro.Persona;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.TreeSet;
@@ -9,15 +11,21 @@ public class EstructurasDeDatos {
         /* ArrayList */
         ArrayList arrayList = new ArrayList();
 
+        arrayList.add(3);
+        arrayList.add("Hola");
+        arrayList.add('f');
+
         arrayList.size(); // conocer el tamaño del array
+
         //arrayList.add(); // agregar elemento
         //arrayList.get(2); // recuperar un elemento
-        //arrayList.remove(2); // eliminar un elemento
-        arrayList.clear(); // borrar el contenido total
-        //arrayList.set(indice, nuevoObjeto); // modificar un elemento
+        //arrayList.remove(1); // eliminar un elemento
+        //arrayList.clear(); // borrar el contenido total
+        //arrayList.set(8, "valor"); // modificar un elemento
 
         /* ArrayList para un tipo específico */
         ArrayList<String> strings = new ArrayList<>(20);
+        // strings.add(34); // espera un String, no un int
 
 
         /* TreeSet */
@@ -32,7 +40,7 @@ public class EstructurasDeDatos {
         treeSet.first(); // recuperar 1er elemento
         treeSet.last(); // recuperar último elemento
         treeSet.higher(3); // recuperar los valores mas altos que el parámetro
-        treeSet.higher(3); // recuperar los valores mas bajos que el parámetro
+        treeSet.lower(3); // recuperar los valores mas bajos que el parámetro
         treeSet.remove(34); // eliminar el elemento
         treeSet.pollFirst(); // eliminar el primer elemento
         treeSet.pollLast(); // eliminar el último elemento
@@ -42,14 +50,22 @@ public class EstructurasDeDatos {
         HashMap<String, String> stringStringHashMap = new HashMap<>();
 
         stringStringHashMap.put("indice1", "valor indice 1"); // agregar indice y elemento
-        stringStringHashMap.get("indice1"); // recuperar el elemento con el índice
+        stringStringHashMap.put("C", "Cieo");
+        stringStringHashMap.put("78", "mnm");
+        stringStringHashMap.put("9", "mnm");
+
+        System.out.println(stringStringHashMap.get("C")); // recuperar el elemento con el índice
+
         stringStringHashMap.remove("indice1"); // eliminar un objeto por el índice
-        stringStringHashMap.clear(); // eliminar todos los objetos
+        //stringStringHashMap.clear(); // eliminar todos los objetos
         stringStringHashMap.size(); // obtener el tamaño del objeto
-        stringStringHashMap.keySet(); // recuperar el conjunto total de indices
-        stringStringHashMap.values(); // recuperar el conjunto total de valores
+        System.out.println(stringStringHashMap.keySet()); // recuperar el conjunto total de indices
+        System.out.println(stringStringHashMap.values()); // recuperar el conjunto total de valores
 
         System.out.println(stringStringHashMap.keySet());
         System.out.println(stringStringHashMap.values());
+
+        HashMap<Long, Object> longBooleanHashMap = new HashMap<>();
+
     }
 }

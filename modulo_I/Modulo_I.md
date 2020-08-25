@@ -7,8 +7,6 @@ Características del lenguaje Java.
 Java Virtual Machine (JVM) y Java Runtime Environment (JRE). 
 Funcionamiento y características principales. 
 Tipos de datos en Java. Operadores aritméticos.
-Clases concretas, abstractas y estáticas. 
-Modificadores de visibilidad.
 
 ## Programación orientada a objetos (POO)
 La programación orientada a objetos es un paradigma que surge como solución a problemas comunes, entre ellos estaban:

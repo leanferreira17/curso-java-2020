@@ -1,10 +1,9 @@
 # Java Básico 2020 - Módulo II
 
 ### Programa
-Orden de precedencia. Utilización de variables locales y globales. Clases y objetos. Subrutinas o métodos. Métodos constructores y sobrecarga de constructores.
-Herencia de clases, superclase y subclase. Punteros y referencias a objetos. Interfaces.
-Clases concretas, abstractas y estáticas. 
-Modificadores de visibilidad.
+Orden de precedencia. Utilización de variables locales y globales. Clases concretas, estáticas y abstractas. 
+Subrutinas o métodos. Métodos constructores y sobrecarga de constructores.
+Carga de datos por consola: Utilizando un objeto de la clase Scanner.
 
 ## Orden de precedencia entre operadores
 Al igual que en matemáticas, en Java existe un orden a la hora de realizar determinadas operaciones. Cada operador

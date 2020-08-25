@@ -1,7 +1,8 @@
 # Java Básico 2020 - Módulo VI
 
 ### Programa
-Estructuras de datos: ArrayList, TreeSet y HashMap.
+Estructuras de datos: ArrayList, TreeSet y HashMap. Algoritmos de ordenamiento. Collections. Excepciones: checked y 
+unchecked. Try, catch, finally. Throws. Json.
 
 ### Estructuras de datos: ArrayList, TreeSet y HashMap
 ### ArrayList
@@ -28,8 +29,8 @@ Veamos algunas facilidades que nos brinda esta clase.
 ### Excepciones
 En Java existen dos tipos de excepciones:
 
-- las de tiempo de compilación (se deben controlar antes de ejecutar el programa) y
-- las de tiempo de ejecución (ocurren una vez que la aplicación se está ejecutando y no es obligatorio controlarlas).
+- Las de tiempo de compilación (se deben controlar antes de ejecutar el programa) y
+- Las de tiempo de ejecución (ocurren una vez que la aplicación se está ejecutando y no es obligatorio controlarlas).
 
 Las excepciones en tiempo de ejecución pueden ocurrir cuando se produce un error en alguna de las instrucciones de nuestro programa, como por ejemplo cuando se hace una división entre cero, cuando un objeto es 'null' y no puede serlo, cuando no se abre correctamente un fichero, etc. Cuando se produce una excepción se muestra en la pantalla un mensaje de error y finaliza la ejecución del programa.
 
@@ -79,7 +80,7 @@ JSON también puede almacenar arreglos y otros objetos:
         "altura":"172 cm",
         "peso":75,
         "casado":true,
-        "CursosRealizados": ["matematica", "Golang", "Php"],
+        "cursosRealizados": ["matematica", "Golang", "Php"],
         "hijo": {
                     "nombre":"Pedro",
                     "edad": 12

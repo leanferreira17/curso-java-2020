@@ -1,7 +1,7 @@
 # Java Básico 2020 - Módulo IV
 
 ### Programa
-Bucles: Foreach. Operadores lógicos (&&, ||, !). 
+Bucles: Foreach. Operadores lógicos (&&, ||, !). Modificadores de acceso. Encapsulamiento. Herencia. Uso de super.
 
 ### Bucles: foreach
 
