@@ -2,13 +2,12 @@ package modulo.cuatro.herencia.base;
 
 import modulo.cuatro.herencia.clasesprotegidas.Vehiculo;
 
-import java.time.format.*;
 
 
 public class Automovil extends Vehiculo {
     private String modelo; // Ranger, Cruze, etc...
-    DateTimeFormatter dateTimeFormatter;
-    DateTimeParseException dateTimeParseException;
+    //DateTimeFormatter dateTimeFormatter;
+    //DateTimeParseException dateTimeParseException;
     /*
         Estamos en una clase que se encuentra en otro paquete distinto al paquete "clasesprotegidas"
         donde se encuentra la super clase "Vehiculo"
