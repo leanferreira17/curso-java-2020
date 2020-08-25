@@ -43,6 +43,70 @@ Todas las excepciones en Java heredan de Throwable subdividiéndose en Error y E
 
 Java nos permite manejar las excepciones para que nuestro programa continue su ejecución y no se detenga cuando surja alguna. Para ello tenemos la estructura "try – catch – finally". Podemos obviar el finally o el catch pero nunca ambos. En el catch podemos agregar un bloque para cada posible excepción esperada y asi ejecutar un algoritmo diferente en cada caso. 
 
+
+### JSON
+JSON es el acrónimo para JavaScript Object Notation, y aunque su nombre lo diga, no es necesariamente parte de 
+JavaScript, de hecho es un estándar basado en texto plano para el intercambio de información, por lo que se usa en 
+muchos sistemas que requieren mostrar o enviar información para ser interpretada por otros sistemas, la ventaja de JSON 
+al ser un formato que es independiente de cualquier lenguaje de programación, es que los servicios que comparten 
+información por éste método, no necesitan hablar el mismo idioma, es decir, el emisor puede ser Java y el receptor PHP,
+ cada lenguaje tiene su propia librería para codificar y decodificar cadenas de JSON.
+ 
+ #### ¿Cómo se forma una cadena de JSON?
+ 
+ El principio básico es con pares atributo-valor, éstos deben estar encerrados entre llaves { , } que es lo que 
+ definen el inicio y el fin del objeto.
+ 
+ Para entender ésto de mejor forma, vamos a formar un objeto JSON para los datos de una persona:
+ 	
+    //Ejemplo de JSON para un objeto tipo Persona
+    {
+     "nombre":"Juan Vates",
+     "edad":27,
+     "nacionalidad":"Argentino",
+     "altura":"172 cm",
+     "peso":75,
+     "casado":true
+     }
+     
+JSON también puede almacenar arreglos y otros objetos:
+
+    //Ejemplo de JSON para un objeto tipo Persona
+    {
+        "nombre":"Juan Vates",
+        "edad":27,
+        "nacionalidad":"Argentino",
+        "altura":"172 cm",
+        "peso":75,
+        "casado":true,
+        "CursosRealizados": ["matematica", "Golang", "Php"],
+        "hijo": {
+                    "nombre":"Pedro",
+                    "edad": 12
+                }
+    }
+    
+Por último, si tuviera mas de un hijo deberiamos declarar un arreglo de objetos hijo
+
+    {
+         "nombre":"Juan Vates",
+         "edad":27,
+         "nacionalidad":"Argentino",
+         "altura":"172 cm",
+         "peso":75,
+         "casado":true,
+         "CursosRealizados": ["matematica", "Golang", "Php"],
+         "hijos": [{
+                        "nombre":"Pedro",
+                        "edad": 12
+                    },
+                    {
+                        "nombre":"Pedro",
+                        "edad": 12
+                    }]
+    }
+         
+         
 ### Consejos útiles y temas fundamentales por aprender:
 - NO reinventar la rueda
 - Utilizar test unitarios siempre
