@@ -102,14 +102,27 @@ Por último, si tuviera mas de un hijo deberiamos declarar un arreglo de objetos
                         "edad": 12
                     },
                     {
-                        "nombre":"Pedro",
-                        "edad": 12
+                        "nombre":"Ana",
+                        "edad": 24
                     }]
     }
          
          
 ### Consejos útiles y temas fundamentales por aprender:
 - NO reinventar la rueda
-- Utilizar test unitarios siempre
-- Utilizar patrones de diseño
 - Utilizar frameworks (Spring, Hibernate, etc...)
+- Ante la duda ir siempre a la documentación de Oracle
+- Utilizar las herramientas que nos proveen los JDKs
+- Aplicar patrones de diseño
+- Aprender y aplicar algoritmos eficientes (Time complexity)
+
+### Temas para seguir aprendiendo
+- Java Annotations
+- Patrones de diseño
+- Test unitarios (JUnit)
+- Java Doc
+- Acceso a base de datos
+- Api rest
+- Micro servicios
+- Java Generics
+- Tipos Enum
